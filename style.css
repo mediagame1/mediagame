@@ -1,16 +1,91 @@
-.latest-work {
-    background-color: #161b22;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 30px;
-    border: 1px solid #30363d;
-    text-align: center; /* توسيط الصورة والنص */
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #000000; /* خلفية سوداء بالكامل */
+    color: #f0f0f0; /* لون نص فاتح */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* توسيط كل شيء بشكل افتراضي */
+    direction: rtl; /* اتجاه الكتابة من اليمين لليسار */
 }
 
-.latest-work img {
-    max-width: 100%; /* تأكد من أنها لا تتجاوز عرض الشاشة */
+/* تنسيق شريط التنقل (Navbar) */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #585858;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #00bcd4; /* لون التمييز الأزرق */
+}
+
+/* تنسيق المحتوى الرئيسي */
+.content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* تنسيق قسم الصورة */
+.profile-section {
+    margin-bottom: 40px;
+    position: relative;
+    /* هذا يضيف المؤثرات الملونة على الجانبين */
+    box-shadow: 0 0 50px rgba(255, 0, 255, 0.4), /* بنفسجي/وردي */
+                0 0 50px rgba(0, 255, 255, 0.4); /* سماوي/أزرق */
+    display: inline-block;
+    padding: 10px;
+    background: #111;
+    border-radius: 15px;
+}
+
+.profile-img {
+    width: 250px; 
     height: auto;
-    border: 3px solid #00bcd4; /* إطار أزرق حول الصورة */
-    border-radius: 12px;
-    margin: 15px 0;
+    border-radius: 10px;
+    display: block;
+    border: 4px solid white; 
+}
+
+/* تنسيق عنوان الترحيب */
+.greeting-box {
+    padding: 30px;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.05); /* خلفية شبه شفافة */
+    border-radius: 10px;
+}
+
+.english-greeting {
+    font-family: Arial, sans-serif;
+    font-size: 3.5em;
+    color: #00bcd4; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    /* محاكاة تأثير النيون (Glow) */
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+.arabic-subtext {
+    font-size: 1.2em;
+    color: #c9d1d9;
+}
+
+/* تنسيق تذييل الصفحة */
+footer {
+    background-color: #1a1a1a;
+    color: #8b949e;
+    padding: 15px;
+    margin-top: 50px;
 }
