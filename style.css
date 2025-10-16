@@ -1,4 +1,4 @@
-body {
+Body {
     font-family: Tahoma, Geneva, sans-serif;
     background-color: #000000; 
     color: #f0f0f0; 
@@ -74,9 +74,10 @@ body {
 
 /* *كود جديد لتلوين كلمة MediaGame داخل العنوان الرئيسي* */
 .media-game-color {
-    color: #ffc107; /* اللون الأصفر المطلوب */
-    /* إضافة التوهج الأصفر */
-    text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
+    /* تم التعديل إلى الأحمر الداكن (DarkRed) #8B0000 */
+    color: #8B0000; /* اللون الأحمر الداكن الذي طلبته */
+    /* تم تعديل التوهج ليكون أحمر داكن أيضاً */
+    text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000;
 }
 
 .arabic-subtext {
