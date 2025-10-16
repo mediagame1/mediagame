@@ -2,13 +2,13 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
     
     /* ------------------------------------------------ */
-    /* التعديل: استبدال background-color بالصورة */
+    /* التعديل 1: إضافة الصورة كخلفية */
     /* ------------------------------------------------ */
     background-image: url('images/new_main_bg.jpg'); /* <--- تأكد من اسم ملف الصورة هنا */
-    background-size: cover;          /* لتغطية الخلفية بالكامل */
-    background-position: center;     /* لوضع مركز الصورة في المنتصف */
-    background-repeat: no-repeat;    /* لمنع التكرار */
-    background-attachment: fixed;    /* لتثبيت الخلفية أثناء التمرير */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /* ------------------------------------------------ */
 
     color: #f0f0f0; 
@@ -60,6 +60,11 @@ body {
     padding: 10px;
     background: #111;
     border-radius: 15px;
+    
+    /* ------------------------------------------------ */
+    /* التعديل 2: إخفاء الصورة في منتصف الشاشة */
+    display: none; 
+    /* ------------------------------------------------ */
 }
 
 .profile-img {
@@ -72,13 +77,14 @@ body {
 
 /* تعديل صندوق الترحيب ليكون مقروءًا فوق الخلفية */
 .greeting-box {
-    /* إضافة خلفية شبه شفافة لضمان وضوح النص فوق الصورة */
     background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
     border-radius: 10px;
-    margin: 20px auto; 
+    /* ------------------------------------------------ */
+    /* التعديل 3: زيادة الهامش العلوي لإنزال النص */
+    margin: 150px auto 20px auto; 
+    /* ------------------------------------------------ */
     max-width: 80%;
-    /* تأكد من أن الـ margin والـ max-width موجودين لو عايز تخلي الصندوق في المنتصف */
 }
 
 /* تنسيق عنوان الترحيب باللغة العربية */
