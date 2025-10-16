@@ -1,33 +1,41 @@
 body {
     font-family: Tahoma, Geneva, sans-serif;
     background-color: #000000; /* خلفية سوداء بالكامل */
-    color: #f0f0f0; /* لون نص فاتح */
+    color: #f0f0f0; 
     margin: 0;
     padding: 0;
-    text-align: center; /* توسيط كل شيء بشكل افتراضي */
-    direction: rtl; /* اتجاه الكتابة من اليمين لليسار */
+    text-align: center; /* توسيط كل شيء */
+    direction: rtl; 
 }
 
-/* تنسيق شريط التنقل (Navbar) */
+/* تنسيق شريط التنقل (Navbar) - يشبه الشريط في الموقع القديم */
 .navbar {
-    background-color: #1a1a1a;
+    background-color: transparent; /* شفافة */
     padding: 15px 0;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #585858;
+    /* هذا يضيف خطاً أسفل الـ Navbar */
+    box-shadow: 0 4px 6px -6px #555; 
+
 }
 
 .nav-item {
     color: white;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 10px 20px;
+    margin: 0 5px;
     font-size: 1.1em;
     font-weight: bold;
     transition: color 0.3s;
+    /* هذا يعطي شكل الزرار للموقع القديم */
+    border: 2px solid transparent; 
+    border-radius: 5px;
 }
 
-.nav-item:hover {
-    color: #00bcd4; /* لون التمييز الأزرق */
+/* تأثير الهوفر والصفحة النشطة */
+.nav-item:hover, .nav-item.active {
+    color: #00bcd4; /* لون أزرق مميز */
+    border-color: #00bcd4;
 }
 
 /* تنسيق المحتوى الرئيسي */
@@ -37,13 +45,14 @@ body {
     margin: 0 auto;
 }
 
-/* تنسيق قسم الصورة */
+/* تنسيق الصورة الشخصية (لتوسيطها وإضافة الـ Glow) */
 .profile-section {
+    margin-top: 50px;
     margin-bottom: 40px;
     position: relative;
-    /* هذا يضيف المؤثرات الملونة على الجانبين */
-    box-shadow: 0 0 50px rgba(255, 0, 255, 0.4), /* بنفسجي/وردي */
-                0 0 50px rgba(0, 255, 255, 0.4); /* سماوي/أزرق */
+    /* تأثير الإضاءة (Glow) حول الصورة */
+    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), /* بنفسجي/وردي */
+                0 0 70px rgba(0, 255, 255, 0.5); /* سماوي/أزرق */
     display: inline-block;
     padding: 10px;
     background: #111;
@@ -51,30 +60,28 @@ body {
 }
 
 .profile-img {
-    width: 250px; 
+    width: 300px; /* حجم الصورة */
     height: auto;
     border-radius: 10px;
     display: block;
-    border: 4px solid white; 
+    border: 5px solid white; 
 }
 
 /* تنسيق عنوان الترحيب */
 .greeting-box {
     padding: 30px;
     margin-top: 30px;
-    background: rgba(255, 255, 255, 0.05); /* خلفية شبه شفافة */
-    border-radius: 10px;
 }
 
 .english-greeting {
     font-family: Arial, sans-serif;
-    font-size: 3.5em;
+    font-size: 3em; /* حجم الخط */
     color: #00bcd4; 
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
     /* محاكاة تأثير النيون (Glow) */
-    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
 }
 
 .arabic-subtext {
@@ -82,10 +89,9 @@ body {
     color: #c9d1d9;
 }
 
-/* تنسيق تذييل الصفحة */
+/* تنسيق تذييل الصفحة (Footer) */
 footer {
     background-color: #1a1a1a;
     color: #8b949e;
     padding: 15px;
     margin-top: 50px;
-}
