@@ -1,7 +1,17 @@
 body {
     font-family: Tahoma, Geneva, sans-serif;
-    background-color: #000000; 
-    color: #f0fof0; 
+    
+    /* ------------------------------------------------ */
+    /* التعديل: استبدال background-color بالصورة */
+    /* ------------------------------------------------ */
+    background-image: url('images/new_main_bg.jpg'); /* <--- تأكد من اسم ملف الصورة هنا */
+    background-size: cover;          /* لتغطية الخلفية بالكامل */
+    background-position: center;     /* لوضع مركز الصورة في المنتصف */
+    background-repeat: no-repeat;    /* لمنع التكرار */
+    background-attachment: fixed;    /* لتثبيت الخلفية أثناء التمرير */
+    /* ------------------------------------------------ */
+
+    color: #f0f0f0; 
     margin: 0;
     padding: 0;
     text-align: center; 
@@ -27,7 +37,7 @@ body {
     transition: all 0.3s; 
     border: none; 
     border-radius: 5px;
-    /* *زيادة التوهج الأبيض في الـ Navbar* */
+    /* زيادة التوهج الأبيض في الـ Navbar */
     text-shadow: 0 0 4px white; 
 }
 
@@ -60,17 +70,28 @@ body {
     border: 5px solid white; 
 }
 
+/* تعديل صندوق الترحيب ليكون مقروءًا فوق الخلفية */
+.greeting-box {
+    /* إضافة خلفية شبه شفافة لضمان وضوح النص فوق الصورة */
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; 
+    max-width: 80%;
+    /* تأكد من أن الـ margin والـ max-width موجودين لو عايز تخلي الصندوق في المنتصف */
+}
+
 /* تنسيق عنوان الترحيب باللغة العربية */
 .arabic-greeting {
     font-family: 'Droid Arabic Kufi', Tahoma, sans-serif;
     font-size: 3em; 
     color: white; 
     margin-bottom: 10px;
-    /* *زيادة التوهج الأبيض في العنوان الرئيسي "أهلاً بكم في..."* */
+    /* زيادة التوهج الأبيض في العنوان الرئيسي "أهلاً بكم في..." */
     text-shadow: 0 0 8px white;
 }
 
-/* *كود لتلوين كلمة MediaGame باللون الفوشيا المطلوب* */
+/* كود لتلوين كلمة MediaGame باللون الفوشيا المطلوب */
 .media-game-color {
     color: #E6007A; 
     text-shadow: 0 0 5px #E6007A, 0 0 10px #E6007A; 
@@ -79,7 +100,7 @@ body {
 .arabic-subtext {
     font-size: 1.2em;
     color: #c9d1d9;
-    /* *زيادة التوهج الأبيض في النص الفرعي* */
+    /* زيادة التوهج الأبيض في النص الفرعي */
     text-shadow: 0 0 3px white;
 }
 
