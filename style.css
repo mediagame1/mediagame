@@ -18,6 +18,7 @@ body {
 }
 
 .nav-item {
+    /* *التعديل 1: اللون الأساسي أبيض (لإصلاح لون الرئيسية)* */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -25,21 +26,17 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     transition: all 0.3s; 
-    
-    /* *التعديل 1: إزالة الإطار* */
     border: none; 
     border-radius: 5px;
-    
-    /* *التعديل 2: تقليل حدة التوهج الأساسي* */
-    text-shadow: 0 0 3px #ffc107; 
+    /* إزالة التوهج الأساسي ليكون أبيض نقي */
+    text-shadow: none;
 }
 
-/* تأثير الهوفر والصفحة النشطة - اللون الأصفر الأصلي */
-.nav-item:hover, .nav-item.active {
-    color: #ffc107; 
-    /* *التعديل 3: إزالة الإطار عند الهوفر* */
+/* تأثير الهوفر والصفحة النشطة (لإظهار اللون الأصفر عند التحريك أو الضغط) */
+.nav-item:hover, 
+.nav-item.active { /* *التعديل 2: جعل النشط أصفر* */
+    color: #ffc107; /* اللون الأصفر/البرتقالي */
     border-color: transparent; 
-    /* *التعديل 4: تقليل حدة التوهج عند التحريك* */
     text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
 }
 
@@ -69,9 +66,17 @@ body {
 .arabic-greeting {
     font-family: 'Droid Arabic Kufi', Tahoma, sans-serif;
     font-size: 3em; 
+    /* *التعديل 3: إزالة التوهج الأبيض من النص الرئيسي* */
     color: white; 
     margin-bottom: 10px;
-    text-shadow: 0 0 10px white, 0 0 20px white;
+    text-shadow: none;
+}
+
+/* *كود جديد لتلوين كلمة MediaGame داخل العنوان الرئيسي* */
+.media-game-color {
+    color: #ffc107; /* اللون الأصفر المطلوب */
+    /* إضافة التوهج الأصفر */
+    text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
 }
 
 .arabic-subtext {
@@ -86,4 +91,3 @@ footer {
     padding: 15px;
     margin-top: 50px;
 }
-
