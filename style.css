@@ -18,7 +18,6 @@ Body {
 }
 
 .nav-item {
-    /* *التعديل 1: اللون الأساسي أبيض (لإصلاح لون الرئيسية)* */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -28,13 +27,12 @@ Body {
     transition: all 0.3s; 
     border: none; 
     border-radius: 5px;
-    /* إزالة التوهج الأساسي ليكون أبيض نقي */
     text-shadow: none;
 }
 
 /* تأثير الهوفر والصفحة النشطة (لإظهار اللون الأصفر عند التحريك أو الضغط) */
 .nav-item:hover, 
-.nav-item.active { /* *التعديل 2: جعل النشط أصفر* */
+.nav-item.active {
     color: #ffc107; /* اللون الأصفر/البرتقالي */
     border-color: transparent; 
     text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
@@ -45,7 +43,6 @@ Body {
     margin-top: 50px;
     margin-bottom: 40px;
     position: relative;
-    /* تأثير الإضاءة (Glow) حول الصورة */
     box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), 
                 0 0 70px rgba(0, 255, 255, 0.5); 
     display: inline-block;
@@ -66,18 +63,17 @@ Body {
 .arabic-greeting {
     font-family: 'Droid Arabic Kufi', Tahoma, sans-serif;
     font-size: 3em; 
-    /* *التعديل 3: إزالة التوهج الأبيض من النص الرئيسي* */
     color: white; 
     margin-bottom: 10px;
     text-shadow: none;
 }
 
-/* *كود جديد لتلوين كلمة MediaGame داخل العنوان الرئيسي* */
+/* *كود جديد لتلوين كلمة MediaGame داخل العنوان الرئيسي بالوردي الفوشيا* */
 .media-game-color {
-    /* تم التعديل إلى الأحمر الداكن (DarkRed) #8B0000 */
-    color: #8B0000; /* اللون الأحمر الداكن الذي طلبته */
-    /* تم تعديل التوهج ليكون أحمر داكن أيضاً */
-    text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000;
+    /* تم التغيير إلى اللون الوردي الفوشيا #FF00FF */
+    color: #FF00FF; /* لون وردي فوشيا (Fuchsia) */
+    /* تم تعديل التوهج ليكون وردي فوشيا أيضاً */
+    text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF;
 }
 
 .arabic-subtext {
