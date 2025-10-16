@@ -4,38 +4,39 @@ body {
     color: #f0f0f0; 
     margin: 0;
     padding: 0;
-    text-align: center; /* توسيط كل شيء */
+    text-align: center; 
     direction: rtl; 
 }
 
-/* تنسيق شريط التنقل (Navbar) - يشبه الشريط في الموقع القديم */
+/* تنسيق شريط التنقل (Navbar) */
 .navbar {
-    background-color: transparent; /* شفافة */
+    background-color: transparent; 
     padding: 15px 0;
     display: flex;
     justify-content: center;
-    /* هذا يضيف خطاً أسفل الـ Navbar */
     box-shadow: 0 4px 6px -6px #555; 
-
 }
 
 .nav-item {
-    color: white;
+    color: white; /* *اللون الأساسي: أبيض* */
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
     font-size: 1.1em;
     font-weight: bold;
-    transition: color 0.3s;
-    /* هذا يعطي شكل الزرار للموقع القديم */
+    transition: all 0.3s; /* لتأثير تحول سلس */
     border: 2px solid transparent; 
     border-radius: 5px;
+    /* *إضافة تأثير التوهج الأبيض (Glow) إلى النص* */
+    text-shadow: 0 0 5px white, 0 0 10px white; 
 }
 
 /* تأثير الهوفر والصفحة النشطة */
 .nav-item:hover, .nav-item.active {
-    color: #00bcd4; /* لون أزرق مميز */
-    border-color: #00bcd4;
+    color: yellow; /* *التحول إلى اللون الأصفر* */
+    border-color: yellow; /* *تغيير إطار الزر إلى الأصفر* */
+    /* *إضافة تأثير التوهج الأصفر (Glow) عند التحريك* */
+    text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px rgba(255, 255, 0, 0.7);
 }
 
 /* تنسيق المحتوى الرئيسي */
@@ -45,14 +46,13 @@ body {
     margin: 0 auto;
 }
 
-/* تنسيق الصورة الشخصية (لتوسيطها وإضافة الـ Glow) */
+/* تنسيق الصورة الشخصية (الشعار) */
 .profile-section {
     margin-top: 50px;
     margin-bottom: 40px;
     position: relative;
-    /* تأثير الإضاءة (Glow) حول الصورة */
-    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), /* بنفسجي/وردي */
-                0 0 70px rgba(0, 255, 255, 0.5); /* سماوي/أزرق */
+    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), 
+                0 0 70px rgba(0, 255, 255, 0.5); 
     display: inline-block;
     padding: 10px;
     background: #111;
@@ -60,7 +60,7 @@ body {
 }
 
 .profile-img {
-    width: 300px; /* حجم الصورة */
+    width: 300px; 
     height: auto;
     border-radius: 10px;
     display: block;
@@ -75,12 +75,11 @@ body {
 
 .english-greeting {
     font-family: Arial, sans-serif;
-    font-size: 3em; /* حجم الخط */
+    font-size: 3em; 
     color: #00bcd4; 
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    /* محاكاة تأثير النيون (Glow) */
     text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
 }
 
@@ -95,3 +94,4 @@ footer {
     color: #8b949e;
     padding: 15px;
     margin-top: 50px;
+
