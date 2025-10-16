@@ -1,4 +1,4 @@
-Body {
+body {
     font-family: Tahoma, Geneva, sans-serif;
     background-color: #000000; 
     color: #f0f0f0; 
@@ -27,12 +27,13 @@ Body {
     transition: all 0.3s; 
     border: none; 
     border-radius: 5px;
-    text-shadow: none;
+    /* *التعديل: توهج أبيض خفيف للنصوص* */
+    text-shadow: 0 0 1px white; 
 }
 
-/* تأثير الهوفر والصفحة النشطة (لإظهار اللون الأصفر عند التحريك أو الضغط) */
+/* تأثير الهوفر والصفحة النشطة */
 .nav-item:hover, 
-.nav-item.active {
+.nav-item.active { /* **تم إصلاح هذا الكود ليتحول إلى الأصفر فقط عند التحريك أو الضغط (Active) ** */
     color: #ffc107; /* اللون الأصفر/البرتقالي */
     border-color: transparent; 
     text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
@@ -65,20 +66,21 @@ Body {
     font-size: 3em; 
     color: white; 
     margin-bottom: 10px;
-    text-shadow: none;
+    /* *إضافة توهج أبيض خفيف لعنوان "أهلاً بكم في..."* */
+    text-shadow: 0 0 2px white;
 }
 
-/* *كود لتلوين كلمة MediaGame بالدرجة المطلوبة #df1473* */
+/* *كود لتلوين كلمة MediaGame باللون الفوشيا* */
 .media-game-color {
-    /* تم التحديث إلى درجة اللون الدقيقة التي طلبتها */
-    color: #df1473; 
-    /* تم تعديل التوهج ليتناسب مع درجة اللون الجديدة */
-    text-shadow: 0 0 5px #df1473, 0 0 10px #df1473;
+    color: #E6007A; 
+    text-shadow: 0 0 5px #E6007A, 0 0 10px #E6007A; 
 }
 
 .arabic-subtext {
     font-size: 1.2em;
     color: #c9d1d9;
+    /* *إضافة توهج أبيض خفيف للنص الفرعي* */
+    text-shadow: 0 0 1px white;
 }
 
 /* باقي الأكواد */
