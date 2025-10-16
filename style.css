@@ -1,7 +1,7 @@
 body {
     font-family: Tahoma, Geneva, sans-serif;
     background-color: #000000; 
-    color: #f0f0f0; 
+    color: #f0fof0; 
     margin: 0;
     padding: 0;
     text-align: center; 
@@ -18,7 +18,6 @@ body {
 }
 
 .nav-item {
-    /* *اللون الأساسي أبيض (لكل الكلمات)* */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -26,13 +25,13 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     transition: all 0.3s; 
-    border: none; /* إزالة الإطار */
+    border: none; 
     border-radius: 5px;
-    /* *توهج أبيض خفيف للنصوص الأساسية* */
-    text-shadow: 0 0 1px white; 
+    /* *زيادة التوهج الأبيض في الـ Navbar* */
+    text-shadow: 0 0 4px white; 
 }
 
-/* تأثير الهوفر والصفحة النشطة (اللون الأصفر عند التحريك أو إذا كانت هي الصفحة المفتوحة) */
+/* تأثير الهوفر والصفحة النشطة (لإظهار اللون الأصفر عند التحريك أو إذا كانت هي الصفحة المفتوحة) */
 .nav-item:hover, 
 .nav-item.active { 
     color: #ffc107; /* اللون الأصفر/البرتقالي */
@@ -45,7 +44,6 @@ body {
     margin-top: 50px;
     margin-bottom: 40px;
     position: relative;
-    /* تأثير الإضاءة (Glow) حول الصورة */
     box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), 
                 0 0 70px rgba(0, 255, 255, 0.5); 
     display: inline-block;
@@ -68,21 +66,21 @@ body {
     font-size: 3em; 
     color: white; 
     margin-bottom: 10px;
-    /* توهج أبيض خفيف لعنوان "أهلاً بكم في..." */
-    text-shadow: 0 0 2px white;
+    /* *زيادة التوهج الأبيض في العنوان الرئيسي "أهلاً بكم في..."* */
+    text-shadow: 0 0 8px white;
 }
 
 /* *كود لتلوين كلمة MediaGame باللون الفوشيا المطلوب* */
 .media-game-color {
-    color: #E6007A; /* لون فوشيا دقيق */
+    color: #E6007A; 
     text-shadow: 0 0 5px #E6007A, 0 0 10px #E6007A; 
 }
 
 .arabic-subtext {
     font-size: 1.2em;
     color: #c9d1d9;
-    /* توهج أبيض خفيف للنص الفرعي */
-    text-shadow: 0 0 1px white;
+    /* *زيادة التوهج الأبيض في النص الفرعي* */
+    text-shadow: 0 0 3px white;
 }
 
 /* باقي الأكواد */
