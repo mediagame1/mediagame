@@ -25,18 +25,22 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     transition: all 0.3s; 
-    border: 2px solid transparent; 
+    
+    /* *التعديل 1: إزالة الإطار* */
+    border: none; 
     border-radius: 5px;
-    /* *إزالة تأثير التوهج الأبيض والعودة للون الأصلي (أصفر/برتقالي)* */
-    /* هذا يمثل اللون الأصفر في التصميم القديم */
-    text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107; 
+    
+    /* *التعديل 2: تقليل حدة التوهج الأساسي* */
+    text-shadow: 0 0 3px #ffc107; 
 }
 
 /* تأثير الهوفر والصفحة النشطة - اللون الأصفر الأصلي */
 .nav-item:hover, .nav-item.active {
-    color: #ffc107; /* اللون الأصفر/البرتقالي */
-    border-color: #ffc107;
-    text-shadow: 0 0 5px #ffc107, 0 0 15px #ffc107, 0 0 25px rgba(255, 193, 7, 0.7);
+    color: #ffc107; 
+    /* *التعديل 3: إزالة الإطار عند الهوفر* */
+    border-color: transparent; 
+    /* *التعديل 4: تقليل حدة التوهج عند التحريك* */
+    text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
 }
 
 /* تنسيق الصورة (Glow) */
@@ -45,8 +49,8 @@ body {
     margin-bottom: 40px;
     position: relative;
     /* تأثير الإضاءة (Glow) حول الصورة */
-    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), /* بنفسجي/وردي */
-                0 0 70px rgba(0, 255, 255, 0.5); /* سماوي/أزرق */
+    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), 
+                0 0 70px rgba(0, 255, 255, 0.5); 
     display: inline-block;
     padding: 10px;
     background: #111;
@@ -67,7 +71,6 @@ body {
     font-size: 3em; 
     color: white; 
     margin-bottom: 10px;
-    /* محاكاة تأثير النيون الأبيض حول النص العربي */
     text-shadow: 0 0 10px white, 0 0 20px white;
 }
 
