@@ -1,6 +1,6 @@
 body {
     font-family: Tahoma, Geneva, sans-serif;
-    background-color: #000000; /* خلفية سوداء بالكامل */
+    background-color: #000000; 
     color: #f0f0f0; 
     margin: 0;
     padding: 0;
@@ -18,41 +18,35 @@ body {
 }
 
 .nav-item {
-    color: white; /* *اللون الأساسي: أبيض* */
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
     font-size: 1.1em;
     font-weight: bold;
-    transition: all 0.3s; /* لتأثير تحول سلس */
+    transition: all 0.3s; 
     border: 2px solid transparent; 
     border-radius: 5px;
-    /* *إضافة تأثير التوهج الأبيض (Glow) إلى النص* */
-    text-shadow: 0 0 5px white, 0 0 10px white; 
+    /* *إزالة تأثير التوهج الأبيض والعودة للون الأصلي (أصفر/برتقالي)* */
+    /* هذا يمثل اللون الأصفر في التصميم القديم */
+    text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107; 
 }
 
-/* تأثير الهوفر والصفحة النشطة */
+/* تأثير الهوفر والصفحة النشطة - اللون الأصفر الأصلي */
 .nav-item:hover, .nav-item.active {
-    color: yellow; /* *التحول إلى اللون الأصفر* */
-    border-color: yellow; /* *تغيير إطار الزر إلى الأصفر* */
-    /* *إضافة تأثير التوهج الأصفر (Glow) عند التحريك* */
-    text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px rgba(255, 255, 0, 0.7);
+    color: #ffc107; /* اللون الأصفر/البرتقالي */
+    border-color: #ffc107;
+    text-shadow: 0 0 5px #ffc107, 0 0 15px #ffc107, 0 0 25px rgba(255, 193, 7, 0.7);
 }
 
-/* تنسيق المحتوى الرئيسي */
-.content {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* تنسيق الصورة الشخصية (الشعار) */
+/* تنسيق الصورة (Glow) */
 .profile-section {
     margin-top: 50px;
     margin-bottom: 40px;
     position: relative;
-    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), 
-                0 0 70px rgba(0, 255, 255, 0.5); 
+    /* تأثير الإضاءة (Glow) حول الصورة */
+    box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), /* بنفسجي/وردي */
+                0 0 70px rgba(0, 255, 255, 0.5); /* سماوي/أزرق */
     display: inline-block;
     padding: 10px;
     background: #111;
@@ -60,27 +54,21 @@ body {
 }
 
 .profile-img {
-    width: 300px; 
+    width: 300px;
     height: auto;
     border-radius: 10px;
     display: block;
     border: 5px solid white; 
 }
 
-/* تنسيق عنوان الترحيب */
-.greeting-box {
-    padding: 30px;
-    margin-top: 30px;
-}
-
-.english-greeting {
-    font-family: Arial, sans-serif;
+/* تنسيق عنوان الترحيب باللغة العربية */
+.arabic-greeting {
+    font-family: 'Droid Arabic Kufi', Tahoma, sans-serif;
     font-size: 3em; 
-    color: #00bcd4; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    color: white; 
     margin-bottom: 10px;
-    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+    /* محاكاة تأثير النيون الأبيض حول النص العربي */
+    text-shadow: 0 0 10px white, 0 0 20px white;
 }
 
 .arabic-subtext {
@@ -88,10 +76,11 @@ body {
     color: #c9d1d9;
 }
 
-/* تنسيق تذييل الصفحة (Footer) */
+/* باقي الأكواد */
 footer {
     background-color: #1a1a1a;
     color: #8b949e;
     padding: 15px;
     margin-top: 50px;
+}
 
