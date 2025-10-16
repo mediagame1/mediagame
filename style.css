@@ -18,6 +18,7 @@ body {
 }
 
 .nav-item {
+    /* *اللون الأساسي أبيض (لكل الكلمات)* */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -25,15 +26,15 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     transition: all 0.3s; 
-    border: none; 
+    border: none; /* إزالة الإطار */
     border-radius: 5px;
-    /* *التعديل: توهج أبيض خفيف للنصوص* */
+    /* *توهج أبيض خفيف للنصوص الأساسية* */
     text-shadow: 0 0 1px white; 
 }
 
-/* تأثير الهوفر والصفحة النشطة */
+/* تأثير الهوفر والصفحة النشطة (اللون الأصفر عند التحريك أو إذا كانت هي الصفحة المفتوحة) */
 .nav-item:hover, 
-.nav-item.active { /* **تم إصلاح هذا الكود ليتحول إلى الأصفر فقط عند التحريك أو الضغط (Active) ** */
+.nav-item.active { 
     color: #ffc107; /* اللون الأصفر/البرتقالي */
     border-color: transparent; 
     text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107;
@@ -44,6 +45,7 @@ body {
     margin-top: 50px;
     margin-bottom: 40px;
     position: relative;
+    /* تأثير الإضاءة (Glow) حول الصورة */
     box-shadow: 0 0 70px rgba(255, 0, 255, 0.5), 
                 0 0 70px rgba(0, 255, 255, 0.5); 
     display: inline-block;
@@ -66,20 +68,20 @@ body {
     font-size: 3em; 
     color: white; 
     margin-bottom: 10px;
-    /* *إضافة توهج أبيض خفيف لعنوان "أهلاً بكم في..."* */
+    /* توهج أبيض خفيف لعنوان "أهلاً بكم في..." */
     text-shadow: 0 0 2px white;
 }
 
-/* *كود لتلوين كلمة MediaGame باللون الفوشيا* */
+/* *كود لتلوين كلمة MediaGame باللون الفوشيا المطلوب* */
 .media-game-color {
-    color: #E6007A; 
+    color: #E6007A; /* لون فوشيا دقيق */
     text-shadow: 0 0 5px #E6007A, 0 0 10px #E6007A; 
 }
 
 .arabic-subtext {
     font-size: 1.2em;
     color: #c9d1d9;
-    /* *إضافة توهج أبيض خفيف للنص الفرعي* */
+    /* توهج أبيض خفيف للنص الفرعي */
     text-shadow: 0 0 1px white;
 }
 
